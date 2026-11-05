@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2efe8">
+<title>Sarad Pratap Singh — Editor & Visual Storyteller</title>
+<meta name="description" content="Sarad Pratap Singh — Video editor, motion designer and post-production creative.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f7f7f2;--ink:#171717;--muted:#66665f;--line:#bdbdb5;--acid:#d8f36a;--coral:#ff6548;--blue:#9ec5ff;--max:1320px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}a{color:inherit;text-decoration:none}
+.wrap{width:min(var(--max),calc(100% - 76px));margin:auto}.mono{font:10px "DM Mono",monospace;letter-spacing:.08em;text-transform:uppercase}
+.topbar{height:76px;display:flex;align-items:center;border-bottom:1px solid var(--line);position:relative;z-index:5;background:var(--paper)}
+.nav{display:flex;align-items:center;justify-content:space-between;width:100%}.brand{display:flex;align-items:center;font:700 18px "Space Grotesk",sans-serif;letter-spacing:-.07em}.brand-mark{width:29px;height:29px;margin-right:9px}
+.links{display:flex;gap:34px;align-items:center;font-size:12px;font-weight:600}.links a{transition:opacity .2s}.links a:hover{opacity:.5}.links a:last-child{border:1px solid var(--ink);border-radius:50px;padding:11px 17px}
+.hero{padding:48px 0 70px;min-height:690px;display:flex;flex-direction:column;justify-content:space-between;border:0!important}.hero-top{display:flex;justify-content:space-between;align-items:center}.availability{display:flex;align-items:center;gap:9px}.dot{width:8px;height:8px;background:#78a84c;border-radius:50%;display:inline-block}
+.hero h1{font:600 clamp(70px,12vw,166px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.105em;margin:66px 0 48px;max-width:1150px}.hero h1 .outline{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero-bottom{display:grid;grid-template-columns:1fr auto;gap:35px;align-items:end}.hero-bottom p{font:500 clamp(19px,2.2vw,27px)/1.24 "Space Grotesk",sans-serif;letter-spacing:-.055em;max-width:590px;margin:0}.hero-bottom p em{font-style:normal;background:var(--acid);padding:0 5px}
+.hero-cta{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}.button{display:inline-flex;align-items:center;gap:20px;padding:14px 19px;border:1px solid var(--ink);border-radius:50px;font-size:11px;font-weight:700;transition:.2s}.button.dark{background:var(--ink);color:white}.button.hot{background:var(--acid);border-color:var(--acid);color:var(--ink)}.button:hover{transform:translateY(-3px)}
+.ticker{overflow:hidden;background:var(--acid);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);padding:15px 0;white-space:nowrap}.ticker-track{display:inline-block;animation:move 32s linear infinite;font:700 13px "Space Grotesk",sans-serif;text-transform:uppercase}.ticker-track span{padding:0 26px}.ticker-track b{color:var(--coral)}@keyframes move{to{transform:translateX(-50%)}}
+section{padding:105px 0;border-bottom:1px solid var(--line)}.section-label{display:flex;justify-content:space-between;align-items:end;margin-bottom:35px}.section-label h2{font:600 clamp(43px,6.4vw,82px)/.91 "Space Grotesk",sans-serif;letter-spacing:-.09em;margin:12px 0 0}.section-label .mono{color:var(--muted)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:9vw}.big-copy{font:500 clamp(25px,3.6vw,46px)/1.12 "Space Grotesk",sans-serif;letter-spacing:-.07em;margin:0}.big-copy span{background:var(--acid);padding:0 5px}.bio{font-size:14px;line-height:1.85;color:var(--muted);max-width:530px}
+.numbers{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);margin-top:43px}.number{padding:17px 10px 0 0}.number strong{font:600 35px "Space Grotesk",sans-serif;letter-spacing:-.08em;display:block}.number span{font:10px "DM Mono",monospace;text-transform:uppercase;color:var(--muted)}
+.portfolio-intro{display:flex;justify-content:space-between;gap:30px;align-items:end;margin:-8px 0 30px}.portfolio-intro p{max-width:390px;color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.project-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:15px}.project-card{grid-column:span 3;display:block;padding:9px;background:#e9e9e1;transition:transform .25s;overflow:hidden}.project-card:hover{transform:translateY(-5px)}.project-card.wide{grid-column:span 6}
+.project-art{height:290px;position:relative;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:7px;padding:7px}.project-card.wide .project-art{height:320px;grid-template-columns:1.3fr .7fr}
+.art-tile{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}.art-tile .art-word{font:700 clamp(30px,5vw,73px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.11em;text-transform:uppercase}.art-stack{display:grid;grid-template-rows:1fr 1fr;gap:7px;min-width:0}.art-stamp{position:absolute;right:12px;top:12px;font:9px "DM Mono",monospace;text-transform:uppercase}.art-circle{width:145px;height:145px;border:1px solid currentColor;border-radius:50%;display:flex;align-items:center;justify-content:center;font:10px "DM Mono",monospace;text-align:center;transform:rotate(-13deg)}.art-line{height:1px;background:currentColor;width:80%;position:absolute;bottom:22px;left:10%}
+.art-admin{background:#ff795d;color:#171717}.art-admin .art-word{transform:rotate(-8deg)}.art-admin .art-stack div:first-child{background:#d8f36a;color:#171717}.art-admin .art-stack div:last-child{background:#171717;color:#f7f7f2}
+.art-cinema{background:#1d1d1b;color:#f7f7f2}.art-cinema .art-word{font-weight:500}.art-cinema .art-stack div:first-child{background:#9ec5ff;color:#171717}.art-cinema .art-stack div:last-child{background:#ff795d;color:#171717}
+.art-realestate{background:#c7d7cc;color:#171717}.art-realestate .art-stack div:first-child{background:#171717;color:#f7f7f2}.art-realestate .art-stack div:last-child{background:#e9e9e1;color:#171717}
+.art-ugc{background:#f0c8ad;color:#171717}.art-ugc .art-stack div:first-child{background:#ff795d;color:#fff}.art-ugc .art-stack div:last-child{background:#d8f36a;color:#171717}
+.art-motion{background:#d8f36a;color:#171717}.art-motion .art-stack div:first-child{background:#ff795d;color:#fff}.art-motion .art-stack div:last-child{background:#171717;color:#f7f7f2}
+.art-long{background:#242420;color:#f7f7f2}.art-long .art-stack div:first-child{background:#d8f36a;color:#171717}.art-long .art-stack div:last-child{background:#9ec5ff;color:#171717}
+.project-meta{display:flex;justify-content:space-between;align-items:end;padding:18px 8px 10px;gap:16px}.project-meta h3{font:600 clamp(26px,3.5vw,43px)/.9 "Space Grotesk",sans-serif;letter-spacing:-.085em;margin:0}.project-meta p{font:9px "DM Mono",monospace;text-transform:uppercase;color:var(--muted);margin:10px 0 0}.project-meta .open{font-size:25px;flex-shrink:0}
+.work-foot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;font:10px "DM Mono",monospace;text-transform:uppercase}
+.client-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}.client{min-height:112px;padding:19px 22px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;align-items:center;transition:.2s}.client:hover{background:var(--acid)}.client h3{font:600 18px "Space Grotesk",sans-serif;margin:0;letter-spacing:-.04em}.client p{font-size:10px;color:var(--muted);margin:5px 0 0}.handle{font:10px "DM Mono",monospace;color:#d84e36;margin-top:5px}.client .arrow{font-size:20px}
+.skills{display:flex;flex-wrap:wrap;gap:9px}.pill{border:1px solid var(--ink);border-radius:50px;padding:10px 15px;font-size:11px;font-weight:600}.pill:hover{background:var(--acid)}
+.process{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.process h3{font:600 clamp(34px,4.6vw,60px)/.95 "Space Grotesk",sans-serif;letter-spacing:-.08em;margin:0}.process p{font-size:14px;line-height:1.9;color:var(--muted);margin:0}
+.contact{background:#171717;color:#f7f7f2;padding:90px 0}.contact-inner{display:flex;justify-content:space-between;align-items:end;gap:35px}.contact h2{font:600 clamp(58px,10vw,140px)/.82 "Space Grotesk",sans-serif;letter-spacing:-.1em;margin:22px 0 0}.contact h2 span{color:var(--acid)}.contact-right{display:grid;gap:13px;font-size:13px;min-width:270px}.contact-right a{border-bottom:1px solid #555;padding-bottom:8px}.contact-right a:hover{color:var(--acid)}
+footer{padding:22px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font:9px "DM Mono",monospace;text-transform:uppercase}
+@media(max-width:700px){.wrap{width:calc(100% - 34px)}.topbar{height:64px}.links{gap:13px;font-size:10px}.links a:last-child{padding:8px 11px}.hero{padding:50px 0 45px;min-height:590px}.hero-top{align-items:flex-start;gap:12px;flex-direction:column}.hero h1{font-size:clamp(61px,16vw,112px);margin:60px 0 42px}.hero-bottom,.intro-grid,.process{grid-template-columns:1fr;gap:24px}.hero-cta{justify-content:flex-start}section{padding:70px 0}.section-label{align-items:flex-start;gap:15px;flex-direction:column}.project-grid{grid-template-columns:1fr;gap:13px}.project-card,.project-card.wide{grid-column:span 1}.project-art,.project-card.wide .project-art{height:225px}.project-meta h3{font-size:31px}.client-grid{grid-template-columns:1fr}.numbers{grid-template-columns:repeat(3,1fr)}.number strong{font-size:27px}.contact-inner{align-items:flex-start;flex-direction:column}.contact-right{width:100%}footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#" aria-label="Sarad Pratap Singh home">
+<svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+<path d="M4 25V7h6l12 14V7h6v18h-6L10 11v14z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="miter"/>
+<path d="M4 28h24" stroke="#ff5938" stroke-width="2.3"/>
+</svg> SARAD<span>.</span><nav class="links"><a href="#work">Work</a><a href="#about">Manifesto</a><a href="#clients">Family</a><a href="#contact">Contact ↗</a></nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero" style="border:0">
+<div class="hero-top"><div class="mono">Video editor · Motion designer · Visual storyteller</div><div class="availability mono"><i class="dot"></i> Available for remote projects</div></div>
+<h1>Ideas into<br><span class="outline">impact.</span></h1>
+<div class="hero-bottom"><p>I turn good ideas into <em>moving stories.</em> Video editing, motion design and visual storytelling with a point of view.</p><div class="hero-cta"><a class="button dark" href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">Explore my work ↗</a><a class="button hot" href="https://wa.me/917881151861" target="_blank" rel="noopener">Start a project ↗</a></div></div>
+</section>
+</div>
+<div class="ticker"><div class="ticker-track"><span>EDIT WITH INTENTION <b>✳</b> MAKE IT MOVE <b>✳</b> STORY FIRST <b>✳</b> GOOD ENERGY, GREAT WORK <b>✳</b> EDIT WITH INTENTION <b>✳</b> MAKE IT MOVE <b>✳</b> STORY FIRST <b>✳</b> GOOD ENERGY, GREAT WORK <b>✳</b></span></div></div>
+<div class="wrap">
+<section id="about"><div class="section-label"><div><div class="mono">01 / A little about me</div><h2>Not just cuts.<br>Creative choices.</h2></div><div class="mono">LUCKNOW, INDIA ↗</div></div>
+<div class="intro-grid"><p class="big-copy">I'm Sarad Pratap Singh — a video editor and post-production creative who believes <span>every frame has a job to do.</span></p><div><p class="bio">I create social-first content, short-form videos, brand films and real-estate marketing creatives. My approach brings together clean editing, strong typography, motion design and visual storytelling — from the first footage review to final delivery.</p><div class="numbers"><div class="number"><strong>02</strong><span>Years experience</span></div><div class="number"><strong>05+</strong><span>Creative disciplines</span></div><div class="number"><strong>∞</strong><span>Ideas to explore</span></div></div></div></div>
+</section>
+<section id="work">
+<div class="section-label"><div><div class="mono">02 / Selected work</div><h2>Different worlds.<br>One edit style.</h2></div><div class="mono">OPEN A CATEGORY ↗</div></div>
+<div class="portfolio-intro">
+<div class="mono">A curated selection of edits, motion and visual stories.</div>
+<p>Explore each collection on Behance. Long-form edits and extended videos are grouped separately on Google Drive.</p>
+</div>
+<div class="project-grid">
+<a class="project-card" href="https://www.behance.net/gallery/257619129/Admin-videos" target="_blank" rel="noopener" aria-label="Open Admin videos on Behance">
+<div class="project-art art-admin">
+<div class="art-tile"><span class="art-stamp">01 / SOCIAL CUTS</span><div class="art-word">ADMIN<br>MODE</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">PACE<br>+ RHYTHM</div></div><div class="art-tile"><small>Fast cuts<br>Clear stories<br>Sharp delivery</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Admin videos</h3><p>Social content · Talking-head edits</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257618983/Cinematic-videos" target="_blank" rel="noopener" aria-label="Open Cinematic videos on Behance">
+<div class="project-art art-cinema">
+<div class="art-tile"><span class="art-stamp">02 / VISUAL STORIES</span><div class="art-word">CINE<br>MATIC.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">LIGHT<br>· FRAME<br>· FEEL</div></div><div class="art-tile"><small>Atmosphere<br>Sound design<br>Story-led pace</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Cinematic videos</h3><p>Visual storytelling · Film edits</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257618387/Real-estates-work" target="_blank" rel="noopener" aria-label="Open Real estate work on Behance">
+<div class="project-art art-realestate">
+<div class="art-tile"><span class="art-stamp">03 / PROPERTY FILMS</span><div class="art-word">SPACE<br>TO LIVE.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">ARCHI<br>TECTURE<br>IN MOTION</div></div><div class="art-tile"><small>Real estate<br>Project films<br>Location stories</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Real estate work</h3><p>Property films · Project promos</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257617757/Ugc-video" target="_blank" rel="noopener" aria-label="Open UGC videos on Behance">
+<div class="project-art art-ugc">
+<div class="art-tile"><span class="art-stamp">04 / CREATOR CONTENT</span><div class="art-word">REAL<br>PEOPLE.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">HOOK<br>→ TRUST<br>→ ACTION</div></div><div class="art-tile"><small>UGC edits<br>Product stories<br>Native pacing</small></div></div>
+</div>
+<div class="project-meta"><div><h3>UGC videos</h3><p>Creator-led content · Ad edits</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://www.behance.net/gallery/257617077/Motion-graphics" target="_blank" rel="noopener" aria-label="Open Motion graphics on Behance">
+<div class="project-art art-motion">
+<div class="art-tile"><span class="art-stamp">05 / DESIGN IN MOTION</span><div class="art-word">MOVE<br>TYPE.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">TYPE<br>· SHAPE<br>· MOTION</div></div><div class="art-tile"><small>Typography<br>Motion systems<br>Compositing</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Motion graphics</h3><p>Typography · Animation · VFX</p></div><span class="open">↗</span></div>
+</a>
+<a class="project-card" href="https://drive.google.com/drive/folders/1Gw8b511X-rLm4Bqi6Yfr0bUufVqUpV3k?usp=sharing" target="_blank" rel="noopener" aria-label="Open long-form videos on Google Drive">
+<div class="project-art art-long">
+<div class="art-tile"><span class="art-stamp">06 / EXTENDED CUTS</span><div class="art-word">LONG<br>FORM.</div><div class="art-line"></div></div>
+<div class="art-stack"><div class="art-tile"><div class="art-circle">DEEP<br>DIVE<br>EDITING</div></div><div class="art-tile"><small>YouTube<br>Long videos<br>Full stories</small></div></div>
+</div>
+<div class="project-meta"><div><h3>Long-form videos</h3><p>YouTube · Extended edits · Google Drive</p></div><span class="open">↗</span></div>
+</a>
+</div>
+<div class="work-foot"><span>Choose a collection to explore</span><a href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">All work on Behance ↗</a></div>
+</section>
+<section><div class="section-label"><div><div class="mono">03 / My toolkit</div><h2>Tools are just<br>the beginning.</h2></div></div><div class="skills"><span class="pill">Premiere Pro</span><span class="pill">After Effects</span><span class="pill">DaVinci Resolve</span><span class="pill">Media Encoder</span><span class="pill">Fusion</span><span class="pill">Higgsfield</span><span class="pill">Runway</span><span class="pill">Google Veo</span><span class="pill">Flow AI</span><span class="pill">ElevenLabs</span><span class="pill">Topaz Tools</span><span class="pill">Motion Graphics</span><span class="pill">Typography</span><span class="pill">Compositing</span></div></section>
+<section id="clients"><div class="section-label"><div><div class="mono">04 / Good people, good work</div><h2>Good people<span style="color:var(--coral)">.</span></h2></div><div class="mono">CLIENTS & CREATOR COLLABORATIONS</div></div>
+<div class="client-grid">
+<a class="client" href="https://www.instagram.com/klyrcreative.co/" target="_blank" rel="noopener"><div><h3>Klyr Creative Co</h3><div class="handle">@klyrcreative.co ↗</div><p>Social media marketing · Content & branding</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/brandbrokers.in/" target="_blank" rel="noopener"><div><h3>BrandBrokers.in</h3><div class="handle">@brandbrokers.in ↗</div><p>Creator ecosystem · Brand collaborations</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/clickfield_media/" target="_blank" rel="noopener"><div><h3>Clickfield Media</h3><div class="handle">@clickfield_media ↗</div><p>Digital marketing · Performance ads</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/3hourstudios/" target="_blank" rel="noopener"><div><h3>3Hour Studios</h3><div class="handle">@3hourstudios ↗</div><p>Graphic design · Marketing & web</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/jindalpropertysolution/" target="_blank" rel="noopener"><div><h3>Jindal Property Solutions</h3><div class="handle">@jindalpropertysolution ↗</div><p>Real estate · Property content</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/me_priyanshi.14/" target="_blank" rel="noopener"><div><h3>Priyanshi V. Mishra</h3><div class="handle">@me_priyanshi.14 ↗</div><p>Lifestyle creator · Personal brand</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/purshotamvashisht/" target="_blank" rel="noopener"><div><h3>Purshotam Vashisht</h3><div class="handle">@PurshotamVashisht ↗</div><p>YouTube creator · Food & challenge videos</p></div><span class="arrow">↗</span></a>
+<a class="client" href="https://www.instagram.com/flashnclick/" target="_blank" rel="noopener"><div><h3>Flash N Click</h3><div class="handle">@flashnclick ↗</div><p>Photography · Newborn, maternity & weddings</p></div><span class="arrow">↗</span></a>
+</div></section>
+<section><div class="section-label"><div><div class="mono">05 / The process</div><h2>Good work is<br>a team sport.</h2></div></div><div class="process"><h3>Listen closely.<br>Make boldly.<br>Polish the details.</h3><p>From footage review and creative execution to feedback, revisions and final delivery. I focus on clear storytelling, considered pacing, strong typography and dependable communication. I also support edit reviews, corrections and coordination across editing workflows.</p></div></section>
+</div>
+<section class="contact" id="contact"><div class="wrap contact-inner"><div><div class="mono">Got an idea in mind?</div><h2>LET'S MAKE<br><span>SOMETHING.</span></h2></div><div class="contact-right"><a href="https://wa.me/917881151861" target="_blank" rel="noopener">WhatsApp · +91 78811 51861 ↗</a><a href="mailto:saradthakur2020@gmail.com">saradthakur2020@gmail.com ↗</a><a href="https://www.behance.net/saradthakur" target="_blank" rel="noopener">Behance · Selected work ↗</a><span class="mono">Lucknow, India · Available worldwide</span></div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 SARAD PRATAP SINGH</span><span>INDEPENDENT CREATIVE · VIDEO & MOTION</span></footer>
+</body></html>
